@@ -1,0 +1,17 @@
+#author：alion
+
+此模块为一套完整的爬虫框架
+包括 ：请求 、解析 、存储等
+
+包 ：
+    MAIN：函数入口  主要像alion函数传递param_dict中与当前函数对应的字典
+    CRAW_FUNCTION：三个部分 解析主函数（all_functions）：里面存放所有历史解析函数 ，模块主程序（alion） ，请求函数（requests）
+    THREAD_CURRENT：多线程调用
+    DATAS_HANDLES：数据集存储处理
+    USER_PROXIE：代理
+
+
+使用方法 ：
+    1   param_dict字典初始化   （UTIL.param_dict)
+    2   url列表初始化  （UTIL.starts_urls)
+    3   解析主函数写入（CRAW_FUNCTION.all_functions)
