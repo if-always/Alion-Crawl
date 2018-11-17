@@ -101,14 +101,14 @@ def sunan_job(url):
             continue
     return job_list
 
-def douyin(url):
+# def douyin(url):
 
-    res_list = []
-    res = requests.get(url, headers=headers)
-    # print(res.content)
-    path = "./img/job_anal/" + url[-20:-8] + '.mp4'
-    with open(path, "wb") as file:
-        file.write(res.content)
-    info = str(url) + ".mp4 下载完成"
-    res_list.append(info)
-    return res_list
+#     res_list = []
+#     res = requests.get(url, headers=headers)
+#     # print(res.content)
+#     path = "./img/job_anal/" + url[-20:-8] + '.mp4'
+#     with open(path, "wb") as file:
+#         file.write(res.content)
+#     info = str(url) + ".mp4 下载完成"
+#     res_list.append(info)
+#     return res_list
